@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <h1>Bill Splitter</h1>
+    <div id="main-container">
+        <div id="input">
+            <label for="bill">Bill Total:</label>
+            <br>
+            <input type="text" id="bill" name="bill" size="40">
+            <br>
+            <label for="tip-amount">Choose tip percent:</label>
+            <select name="tip-amount" id="tip-amount" form="input-form">
+                <option value="5%">5%</option>
+                <option value="10%">10%</option>
+                <option value="15%">15%</option>
+                <option value="25%">25%</option>
+                <option value="50%">50%</option>
+            </select>
+            <br>
+            <label for="total-customers">Number of Customers:</label>
+            <br>
+            <input type="text" id="total-customers" size="40">
+            <br>
+            <input id="submit" type="submit" value="Submit!">
+        </div>
+        <div id="output">
+            <h2 id="tip-amount">Tip Amount</h2>
+            <p>/ person</p>
+            <h3 id="tip-per-person">$0.00</h3>
+            <h2 id="total-amount">Total Amount</h2>
+            <h3 id="final-per-person">$0.00</h3>
+            <p>/ person</p>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+    <div id="attribution">
+        <a href="#">Jordan Hobson</a>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
