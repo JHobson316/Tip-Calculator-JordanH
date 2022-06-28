@@ -17,21 +17,37 @@ function showResults(array){
 }
 
 // Taking form inputs to calulate the split of tip and total
-function billCalc(bill, tip, cust){
-    // Array for calculated tip and total splits
-    let billArray = [];
-    //Getting tip amount
-    let percent = (tip/100)*bill;
+form.addEventListener('submit', function(event){
+event.preventDefault();
+   //Getting tip amount
+    let percent = (tipAmount.value/100)*bill.value;
+    percent = percent.toFixed(2);
+    console.log(percent);
     //Dividing the tip amount per each person
     let tipPer = percent/cust;
+    tipPer = percent.toFixed(2);
+    console.log(tipPer);
+    billArray.push(tipPer);
     //Getting total cost for tip and total
     let totalCost = bill+tip;
     //Dividing full cost per person
-    let costPer = totalCost/cust;
+   let costPer = totalCost/cust;
     //Pushing each average to array
-    billArray.push(tipPer, costPer);
+    billArray.push(costPer);
     console.log(billArray);
-    return billArray;
+    showResults(billArray);
+});
+
+// reset form!
+function clearReset() {
+	totalPerPerson.innerHTML = '$0.00'; // switch numbers to equal 0
+	tipPerPerson.innerHTML = '$0.00'; // switch numbers to equal 0
+	form.reset; // clear form
 }
 
-form.addEventListener('submit', showResults(billCalc(bill, tipAmount, customers)));
+
+// when reset button is clicked, run the reset function
+reset.addEventListener('click', function () {
+	clearReset(); // boom :D
+
+})

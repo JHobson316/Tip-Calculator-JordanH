@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(131, 4, 4);
+}
+h1{
+    display: grid;
+    justify-content: center;
+}
+#main-container{
+    background-color: azure;
+    border: black solid 4px;
+    border-radius: 20px;
+    padding: 7px;
+    margin: 5px;
+}
+#input{
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display:grid;
+    justify-content: center;
+}
+#output{
+    display: grid;
+    justify-content: center;
+    background-color: rgb(181, 223, 239);
+    padding: 10px;
+    border: rgb(0, 0, 0) solid 4px;
+    border-radius: 20px;
+}
+#tip-amount{
+    display: grid;
+    justify-content: center;
+    background-color: azure;
+    border-radius: 5px;
+}
+#total-amount{
+    display: grid;
+    justify-self:center;
+    background-color: azure;
+    border-radius: 5px;
+}
+p{
+    font-weight:bold;
+    justify-self: center;
+}
+#tip-amount{
+    width: 317px;
+}
+h3{
+    justify-self: center;
+}
