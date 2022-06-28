@@ -38,6 +38,7 @@ event.preventDefault();
     showResults(billArray);
 });
 
+// Borrowed from example page --Start
 // reset form!
 function clearReset() {
 	totalPerPerson.innerHTML = '$0.00'; // switch numbers to equal 0
@@ -51,3 +52,4 @@ reset.addEventListener('click', function () {
 	clearReset(); // boom :D
 
 })
+// Borrowed from example page --End
