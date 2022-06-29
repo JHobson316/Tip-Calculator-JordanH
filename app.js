@@ -11,7 +11,7 @@ let reset = document.getElementById('reset');
 // Displaying calculated values on page
 // Placed above for availability reasons
 function showResults(array){
-    console.log('Bop');
+    console.log('All calculations made.');
     //Changing the text on the page to the amounts calculated
     tipPerPerson.innerHTML = `$${array[0]}`;
     totalPerPerson.innerHTML = `$${array[1]}`;
