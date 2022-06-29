@@ -5,3 +5,7 @@ I've placed all of the html elements that would be required and made some work o
 ### Progress Report #2 ###
 
 I've finished my css except for a small problem with the background of the tip amount element. The main challenge I'm facing is that I know I have the math correct (what to add to each other and how to get the correct values that I would need to pass on), but the syntax still escapes me. As well, the submit button on my page doesn't return anything, not even an error message.
+
+### Progress Report #3 ###
+
+Finished tip calculator js with returning values and data types and added a README
